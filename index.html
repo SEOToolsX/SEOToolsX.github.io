@@ -44,7 +44,10 @@
             <div class="tool-container">
                 <textarea id="inputText" placeholder="Enter your text here..."></textarea>
                 <button onclick="analyzeText()">Analyze</button>
-                <div id="result"></div>
+                <div class="result-box">
+                    <pre id="result"></pre>
+                    <button onclick="copyResult('result')">Copy Results</button>
+                </div>
             </div>
         </section>
 
@@ -55,7 +58,10 @@
                 <input type="text" id="metaTitle" placeholder="Enter your title...">
                 <textarea id="metaDescription" placeholder="Enter your description..."></textarea>
                 <button onclick="generateMetaTags()">Generate Meta Tags</button>
-                <pre id="metaTagsResult"></pre>
+                <div class="result-box">
+                    <pre id="metaTagsResult"></pre>
+                    <button onclick="copyResult('metaTagsResult')">Copy Meta Tags</button>
+                </div>
             </div>
         </section>
 
@@ -64,7 +70,10 @@
             <h2>Content Idea Generator</h2>
             <div class="tool-container">
                 <button onclick="generateIdea()">Generate Idea</button>
-                <p id="contentIdea"></p>
+                <div class="result-box">
+                    <p id="contentIdea"></p>
+                    <button onclick="copyResult('contentIdea')">Copy Idea</button>
+                </div>
             </div>
         </section>
 
@@ -88,4 +97,4 @@
 
     <script src="script.js"></script>
 </body>
-            </html>
+                    </html>
