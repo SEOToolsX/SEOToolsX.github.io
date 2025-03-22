@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEOToolsX - Free SEO Tools</title>
+    <meta name="description" content="SEOToolsX provides free SEO tools like SEO Checklist Generator, Keyword Density Checker, Meta Tag Generator, and more.">
+    <meta name="keywords" content="SEO, tools, keyword density, meta tags, content ideas, website speed">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SEOToolsX</h1>
+        <p>Your Free SEO Toolkit</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#checklist">SEO Checklist</a></li>
+            <li><a href="#keyword-density">Keyword Density</a></li>
+            <li><a href="#meta-tags">Meta Tags</a></li>
+            <li><a href="#content-ideas">Content Ideas</a></li>
+            <li><a href="#speed-checker">Speed Checker</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="checklist">
+            <h2>SEO Checklist Generator</h2>
+            <div class="tool-container">
+                <ul id="checklist-items">
+                    <li><input type="checkbox"> Add Meta Title and Description</li>
+                    <li><input type="checkbox"> Use Proper Heading Tags (H1, H2, H3)</li>
+                    <li><input type="checkbox"> Optimize Images with Alt Text</li>
+                    <li><input type="checkbox"> Include Internal Links</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="keyword-density">
+            <h2>Keyword Density Checker</h2>
+            <div class="tool-container">
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+                <button onclick="analyzeText()">Analyze</button>
+                <div id="result"></div>
+            </div>
+        </section>
+
+        <section id="meta-tags">
+            <h2>Meta Tag Generator</h2>
+            <div class="tool-container">
+                <input type="text" id="metaTitle" placeholder="Enter your title...">
+                <textarea id="metaDescription" placeholder="Enter your description..."></textarea>
+                <button onclick="generateMetaTags()">Generate Meta Tags</button>
+                <pre id="metaTagsResult"></pre>
+            </div>
+        </section>
+
+        <section id="content-ideas">
+            <h2>Content Idea Generator</h2>
+            <div class="tool-container">
+                <button onclick="generateIdea()">Generate Idea</button>
+                <p id="contentIdea"></p>
+            </div>
+        </section>
+
+        <section id="speed-checker">
+            <h2>Website Speed Checker</h2>
+            <div class="tool-container">
+                <ul>
+                    <li><input type="checkbox"> Optimize Images (Use WebP format)</li>
+                    <li><input type="checkbox"> Enable Browser Caching</li>
+                    <li><input type="checkbox"> Minify CSS, JS, and HTML</li>
+                    <li><input type="checkbox"> Use a Content Delivery Network (CDN)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 SEOToolsX. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                                       </html>
