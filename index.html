@@ -3,98 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEOToolsX - Free SEO Tools</title>
-    <meta name="description" content="SEOToolsX provides free SEO tools like SEO Checklist Generator, Keyword Density Checker, Meta Tag Generator, and more.">
-    <meta name="keywords" content="SEO, tools, keyword density, meta tags, content ideas, website speed">
+    <meta name="description" content="Free SEO Tools - Keyword Research, Backlink Checker, Website Analysis & more">
+    <meta name="keywords" content="free seo tools, keyword research, backlink checker, website analyzer, meta tag generator">
+    <title>SEOToolsX - Free Online SEO Tools Collection</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header>
-        <h1>SEOToolsX</h1>
-        <p>Your Free SEO Toolkit</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#checklist">SEO Checklist</a></li>
-            <li><a href="#keyword-density">Keyword Density</a></li>
-            <li><a href="#meta-tags">Meta Tags</a></li>
-            <li><a href="#content-ideas">Content Ideas</a></li>
-            <li><a href="#speed-checker">Speed Checker</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SEOToolsX</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#tools">All Tools</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
     </nav>
 
-    <main>
-        <!-- SEO Checklist Generator -->
-        <section id="checklist">
-            <h2>SEO Checklist Generator</h2>
-            <div class="tool-container">
-                <ul id="checklist-items">
-                    <li><input type="checkbox"> Add Meta Title and Description</li>
-                    <li><input type="checkbox"> Use Proper Heading Tags (H1, H2, H3)</li>
-                    <li><input type="checkbox"> Optimize Images with Alt Text</li>
-                    <li><input type="checkbox"> Include Internal Links</li>
-                </ul>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Free & Powerful SEO Tools</h1>
+            <p>Boost your website's performance with our complete collection of free SEO tools</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search tools...">
+                <button>Search</button>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Keyword Density Checker -->
-        <section id="keyword-density">
-            <h2>Keyword Density Checker</h2>
-            <div class="tool-container">
-                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
-                <button onclick="analyzeText()">Analyze</button>
-                <div class="result-box">
-                    <pre id="result"></pre>
-                    <button onclick="copyResult('result')">Copy Results</button>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Popular Tools Section -->
+        <section id="popular-tools">
+            <h2>Most Popular Tools</h2>
+            <div class="tools-grid">
+                <!-- Tool Card 1 -->
+                <div class="tool-card">
+                    <div class="tool-icon">🔍</div>
+                    <h3>Keyword Research</h3>
+                    <p>Find the best keywords for your content strategy</p>
+                    <a href="tools/keyword-research.html" class="btn">Use Tool</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Meta Tag Generator -->
-        <section id="meta-tags">
-            <h2>Meta Tag Generator</h2>
-            <div class="tool-container">
-                <input type="text" id="metaTitle" placeholder="Enter your title...">
-                <textarea id="metaDescription" placeholder="Enter your description..."></textarea>
-                <button onclick="generateMetaTags()">Generate Meta Tags</button>
-                <div class="result-box">
-                    <pre id="metaTagsResult"></pre>
-                    <button onclick="copyResult('metaTagsResult')">Copy Meta Tags</button>
+                
+                <!-- Tool Card 2 -->
+                <div class="tool-card">
+                    <div class="tool-icon">🔗</div>
+                    <h3>Backlink Checker</h3>
+                    <p>Analyze your website's backlink profile</p>
+                    <a href="tools/backlink-checker.html" class="btn">Use Tool</a>
                 </div>
+                
+                <!-- Add more tool cards as needed -->
             </div>
         </section>
 
-        <!-- Content Idea Generator -->
-        <section id="content-ideas">
-            <h2>Content Idea Generator</h2>
-            <div class="tool-container">
-                <button onclick="generateIdea()">Generate Idea</button>
-                <div class="result-box">
-                    <p id="contentIdea"></p>
-                    <button onclick="copyResult('contentIdea')">Copy Idea</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Website Speed Checker -->
-        <section id="speed-checker">
-            <h2>Website Speed Checker</h2>
-            <div class="tool-container">
-                <ul>
-                    <li><input type="checkbox"> Optimize Images (Use WebP format)</li>
-                    <li><input type="checkbox"> Enable Browser Caching</li>
-                    <li><input type="checkbox"> Minify CSS, JS, and HTML</li>
-                    <li><input type="checkbox"> Use a Content Delivery Network (CDN)</li>
-                </ul>
+        <!-- All Tools Section -->
+        <section id="tools">
+            <h2>All SEO Tools</h2>
+            <div class="all-tools-list">
+                <!-- This will be populated with all tools -->
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2023 SEOToolsX. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SEOToolsX</h3>
+                    <p>Providing free SEO tools to help you grow your online presence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@SEOToolsX.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 SEOToolsX. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
                     </html>
