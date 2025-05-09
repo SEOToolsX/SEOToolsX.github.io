@@ -4,29 +4,60 @@
     <meta charset="UTF-8">
     <title>Meta Tag Scanner | SeoToolsX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free meta tag analyzer tool for SEO">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1 class="logo">SeoToolsX</h1>
+            <h1 class="logo"><a href="../index.html">SeoToolsX</a></h1>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#tools">All Tools</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="tool-page">
         <section class="tool-container">
             <h2>Meta Tag Scanner</h2>
             <div class="input-group">
-                <input type="url" id="target-url" placeholder="Enter URL (e.g., https://example.com)">
+                <input type="url" id="target-url" placeholder="https://example.com" required>
                 <button id="scan-btn" class="btn">Scan</button>
             </div>
-            <div id="results" class="results"></div>
+            
+            <div id="results" class="results">
+                <!-- Results will appear here -->
+            </div>
         </section>
     </main>
 
-    <script src="../js/meta-scanner.js"></script>
+    <footer>
+        <p>© 2023 SeoToolsX | Free SEO Tools</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('scan-btn').addEventListener('click', function() {
+            const url = document.getElementById('target-url').value;
+            if (!url) return;
+            
+            // Mock simulation (real implementation would use CORS proxy)
+            document.getElementById('results').innerHTML = `
+                <div class="result-card">
+                    <h3>Results for: ${url}</h3>
+                    <p><strong>Title:</strong> Example Page Title</p>
+                    <p><strong>Meta Description:</strong> This is a sample description</p>
+                    <p><strong>H1:</strong> Main Heading Text</p>
+                </div>
+            `;
+        });
+    </script>
 </body>
-  </html>
+                    </html>
