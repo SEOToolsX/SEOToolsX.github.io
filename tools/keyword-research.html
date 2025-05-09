@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Similar head content as index.html -->
+    <title>Keyword Research Tool - SEOToolsX</title>
+</head>
+<body>
+    <!-- Include the same navigation as index.html -->
+    
+    <main class="container tool-container">
+        <h1>Keyword Research Tool</h1>
+        <p>Enter a keyword to get search volume, competition, and related keywords</p>
+        
+        <div class="tool-form">
+            <input type="text" id="keyword-input" placeholder="Enter a keyword...">
+            <button id="analyze-btn" class="btn">Analyze</button>
+        </div>
+        
+        <div id="results" class="tool-results">
+            <!-- Results will appear here -->
+        </div>
+    </main>
+    
+    <!-- Include the same footer as index.html -->
+    
+    <script>
+        document.getElementById('analyze-btn').addEventListener('click', function() {
+            const keyword = document.getElementById('keyword-input').value.trim();
+            if (!keyword) return;
+            
+            // Simulate API call - in real implementation, you would use a real API
+            document.getElementById('results').innerHTML = `
+                <h2>Results for: "${keyword}"</h2>
+                <div class="result-card">
+                    <h3>Keyword Metrics</h3>
+                    <p><strong>Search Volume:</strong> Estimated 5,000 monthly searches</p>
+                    <p><strong>Competition:</strong> Medium</p>
+                    <p><strong>CPC:</strong> $1.20</p>
+                </div>
+                <div class="result-card">
+                    <h3>Related Keywords</h3>
+                    <ul class="related-keywords">
+                        <li>${keyword} tool</li>
+                        <li>best ${keyword}</li>
+                        <li>${keyword} free</li>
+                        <li>how to ${keyword}</li>
+                    </ul>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
